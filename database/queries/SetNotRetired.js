@@ -10,9 +10,9 @@ module.exports = (_ids) => {
     { _id: { $in: _ids } },
     {
       retired: false,
-    },
-    {
-      multi: true,
     }
+    // {
+    //   multi: true,
+    // }
   );
 };
